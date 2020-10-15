@@ -19,7 +19,7 @@ func NewQueue() *sliceEntry {
 }
 
 //向队列中添加元素
-func (entry *sliceEntry) Offer(e Element) {
+func (entry *sliceEntry) Push(e Element) {
 	entry.element = append(entry.element, e)
 }
 

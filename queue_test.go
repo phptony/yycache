@@ -3,12 +3,16 @@ package yycache
 import (
 	"fmt"
 	"github.com/phptony/yycache/util"
-	"testing"
 )
-​
-func TestQueue(t *testing.T) {
-	queue := util.NewQueue()
-	queue.Push("a")
-	queue.Push("b")
-	fmt.Println(queue.Poll())
+import "testing"
+
+func TestT(t *testing.T)  {
+	q := util.NewQueue()
+	q.Push("1")
+	q.Push("2")
+	q.Push("3")
+	fmt.Println(q.Poll())
+	fmt.Println(q.Size())
+	fmt.Println(q.Poll())
+
 }
